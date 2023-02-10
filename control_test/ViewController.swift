@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     var number: Int = 1
     @IBOutlet var countLabel : UILabel!
+    
+    //配列の定義！　[ ]で囲むことに注意！
+    var nameArray: [String] = ["イチロー","ジロー","サブロー"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +45,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fooooo(){
-        print("buttom is pushed")
+        print(nameArray[1])
 //        for i in 0..<5 {
 //            print(i)
 //        }
-        while number<5 {
-            number=number*2
-            print(number)
+//        while number<5 {
+//            number=number*2
+//            print(number)
+//        }
+        for name in nameArray{
+            print(name)
+            if name=="ジロー"{
+                print("ジローがいた！！")
+            }
         }
     }
 }
