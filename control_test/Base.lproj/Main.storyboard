@@ -33,8 +33,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="fooooo" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLh-5Q-d3l"/>
-                                    <action selector="plus" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5P-XN-7Ss"/>
+                                    <action selector="plus" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0D-as-acx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,7 +41,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="3sD-Km-mbO" id="xxN-1n-8n7"/>
+                        <outlet property="countLabel" destination="3sD-Km-mbO" id="lmS-Oc-QuZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
