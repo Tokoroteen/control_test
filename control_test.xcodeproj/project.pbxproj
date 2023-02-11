@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1C6D4DF2997EC66002D325D /* ミニオン.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C6D4DE2997EC66002D325D /* ミニオン.jpg */; };
+		F1C6D4E12997EC6C002D325D /* IMG_8019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F1C6D4E02997EC6C002D325D /* IMG_8019.JPG */; };
 		F1F398A32995E32B007D5FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F398A22995E32B007D5FD1 /* AppDelegate.swift */; };
 		F1F398A52995E32B007D5FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F398A42995E32B007D5FD1 /* SceneDelegate.swift */; };
 		F1F398A72995E32B007D5FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F398A62995E32B007D5FD1 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1C6D4DE2997EC66002D325D /* ミニオン.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ミニオン.jpg"; sourceTree = "<group>"; };
+		F1C6D4E02997EC6C002D325D /* IMG_8019.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8019.JPG; sourceTree = "<group>"; };
 		F1F3989F2995E32B007D5FD1 /* control_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = control_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F398A22995E32B007D5FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F398A42995E32B007D5FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1C6D4DB2997EA44002D325D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F1C6D4E02997EC6C002D325D /* IMG_8019.JPG */,
+				F1C6D4DE2997EC66002D325D /* ミニオン.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		F1F398962995E32B007D5FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		F1F398A12995E32B007D5FD1 /* control_test */ = {
 			isa = PBXGroup;
 			children = (
+				F1C6D4DB2997EA44002D325D /* Images */,
 				F1F398A22995E32B007D5FD1 /* AppDelegate.swift */,
 				F1F398A42995E32B007D5FD1 /* SceneDelegate.swift */,
 				F1F398A62995E32B007D5FD1 /* ViewController.swift */,
@@ -232,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F398AF2995E330007D5FD1 /* LaunchScreen.storyboard in Resources */,
+				F1C6D4E12997EC6C002D325D /* IMG_8019.JPG in Resources */,
 				F1F398AC2995E330007D5FD1 /* Assets.xcassets in Resources */,
+				F1C6D4DF2997EC66002D325D /* ミニオン.jpg in Resources */,
 				F1F398AA2995E32B007D5FD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
