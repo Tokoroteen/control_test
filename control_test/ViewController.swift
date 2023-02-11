@@ -8,35 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate{
     
-    @IBOutlet var photoimageView: UIImageView!
-    @IBOutlet var sampletextView: UITextView!
+    @IBOutlet var answerLabel: UILabel!
+    @IBOutlet var inputTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        answerLabel.text = "ジャジャーン"
+        inputTextField.delegate = self
     }
     
-    @IBAction func change(){
-        //photoImageViewの画像を変更 / namedの中は各々異なるよ！
-//        photoimageView.image = UIImage(named: "IMG_8019.JPG")
-//        sampletextView.text = "わっしょい"
-        
-        let alert = UIAlertController(title: "注意", message: "雨が降るよ", preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-            self.sampletextView.text = "わっしょい"
-            alert.dismiss(animated: true, completion: nil)
-        }
-        let cancelAction = UIAlertAction(title: "キャンセル", style: .default) { (action) in
-            self.photoimageView.image = UIImage(named: "IMG_8019.JPG")
-            alert.dismiss(animated: true, completion: nil)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if answerLabel.text == inputTextField.text{
+            let alert = UIAlertController(title: "正解", message: "すごいね", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default){(action) in
+                self.dismiss(animated: false,completion: nil)
+                textField.resignFirstResponder()
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: false, completion: nil)
         }
         
-        
-        alert.addAction(okAction)
-        alert.addAction(cancelAction)
-        self.present(alert, animated: true, completion: nil)
+        return true
     }
 
 }
